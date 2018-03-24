@@ -28,6 +28,8 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_harpia
 
 # Kernel
 TARGET_KERNEL_CONFIG := harpia_defconfig
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-7.2/bin
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-eabi-
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 16777216     # 16384 * 1024 mmcblk0p31
