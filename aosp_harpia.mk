@@ -16,7 +16,7 @@
 $(call inherit-product, device/motorola/harpia/full_harpia.mk)
 
 # Inherit some common LOS stuff.
-$(call inherit-product, vendor/aosp/config/common.mk)
+$(call inherit-product, vendor/aosp/config/abc_phone.mk)
 
 # Offline charging ( in case if rom forgot to add )
 PRODUCT_PACKAGES += \
