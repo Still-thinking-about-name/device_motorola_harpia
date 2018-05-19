@@ -38,6 +38,9 @@ PRODUCT_COPY_FILES += \
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+# Qualcomm broadcast whitelist
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/configs/custom_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/custom_config.xml
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.target.rc
